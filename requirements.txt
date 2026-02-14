@@ -53,3 +53,14 @@ uvicorn==0.29.0
 watchfiles==0.21.0
 websockets==12.0
 wrapt==1.12.1
+
+
+fastapi==0.110.0
+uvicorn==0.29.0
+
+numpy==1.26.4
+pandas==2.2.1
+scikit-learn==1.4.2
+
+pydantic==2.6.4
+python-multipart==0.0.9
