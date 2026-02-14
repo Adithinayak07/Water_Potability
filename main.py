@@ -8,7 +8,7 @@ app = FastAPI(
     description="Predicting water potability",
 )
 
-with open(r"C:\Users\nayak\OneDrive\Desktop\Projects\Water_Portability\ml_pipeline\model.pkl","rb") as f:
+with open("model.pkl","rb") as f:
     model = pickle.load(f)
 
 @app.get("/")
@@ -34,4 +34,5 @@ def model_predict(water: Water):
     if predicted_value ==1:
         return "Water is consumable"
     else:
+
         return "Water is not consumable"
